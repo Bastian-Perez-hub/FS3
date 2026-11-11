@@ -272,6 +272,36 @@ form button:hover {
   background: var(--accent-hover);
 }
 
+td button.comprar {
+  margin-left: 0;
+  color: #fff;
+  background: var(--accent);
+}
+
+td button.comprar:hover:not(:disabled) {
+  background: var(--accent-hover);
+  color: #fff;
+}
+
+td button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+button.confirmar {
+  margin-top: 8px;
+  color: #fff;
+  background: var(--accent);
+  box-shadow: 0 6px 16px -6px var(--accent);
+}
+
+button.confirmar:hover:not(:disabled) {
+  background: var(--accent-hover);
+}
+
+button.confirmar:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
 /* ---------- Responsive ---------- */
 @media (max-width: 600px) {
   #root {

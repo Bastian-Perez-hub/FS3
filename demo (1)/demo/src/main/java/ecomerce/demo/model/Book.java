@@ -13,12 +13,16 @@ public class Book {
     private Long id;
     private String title;
     private String author;
+    private Integer price;   // en pesos, sin decimales (15990)
+    private Integer stock;
 
     public Book() {}
 
     public Book(String title, String author) {
         this.title = title;
         this.author = author;
+        this .price = price;
+        this.stock = stock;
     }
 
     public Long getId() { return id; }
@@ -27,4 +31,8 @@ public class Book {
     public void setTitle(String title) { this.title = title; }
     public String getAuthor() { return author; }
     public void setAuthor(String author) { this.author = author; }
+    public Integer getPrice() { return price; }
+    public void setPrice(Integer price) { this.price = price; }
+    public Integer getStock() { return stock; }
+    public void setStock(Integer stock) { this.stock = stock; }
 }
